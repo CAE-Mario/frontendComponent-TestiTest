@@ -67,12 +67,12 @@ var nextQuiz = function(){
     $('#radioB').parent().contents().last()[0].textContent=data.answerB;
     $('#radioC').parent().contents().last()[0].textContent=data.answerC;
     $('#radioD').parent().contents().last()[0].textContent=data.answerD;
-$('#video').attr('src',data.videolink);
-$("#question").text(data.question);
-}else{
-$("#question").text("Quiz completed thank you!");
-$('label').hide();
-$('button').hide();
+    $('#video').attr('src',data.videolink);
+    $("#question").text(data.question);
+    }else{
+        $("#question").text("Quiz completed thank you!");
+        $('label').hide();
+        $('button').hide();
 }  
   },
   function(error) {
