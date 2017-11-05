@@ -101,7 +101,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 <label id=''  style="position: absolute; left: 229.00694274902344px; top: 370.0486068725586px;  "><input name="eval"  type="radio" id="radioC"   >Option</label>
 
    
-<label id=''  style="position: absolute; left: 230.00694274902344px; top: 418.0486068725586px;  "><input type="radio" id="radioD"   >Option</label>
+<label id=''  style="position: absolute; left: 230.00694274902344px; top: 418.0486068725586px;  "><input type="radio" id="radioD" name="eval"  >Option</label>
 
    
 <label id=''  style="position: absolute; left: 40.00694274902344px; top: 368.0486068725586px;  "><input name="eval"  type="radio" id="radioA"   >Option</label>
