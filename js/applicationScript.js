@@ -59,7 +59,7 @@ var nextQuiz = function(){
 //start variable declaration
 
 //end variable declaration
-
+  window.counter +=1;
   client.sendRequest("GET", "videoquiz/getQuiz/" + window.counter, "", "", {}, false,
   function(data, type) {
     if(Object.keys(data).length > 0){
