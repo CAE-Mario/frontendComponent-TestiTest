@@ -65,8 +65,8 @@ var nextQuiz = function(){
     if(Object.keys(data).length > 0){
     $('#radioA').parent().contents().last()[0].textContent=data.answerA;
     $('#radioB').parent().contents().last()[0].textContent=data.answerB;
-$('#radioC').parent().contents().last()[0].textContent=data.answerC;
-$('#radioD').parent().contents().last()[0].textContent=data.answerD;
+    $('#radioC').parent().contents().last()[0].textContent=data.answerC;
+    $('#radioD').parent().contents().last()[0].textContent=data.answerD;
 $('#video').attr('src',data.videolink);
 $("#question").text(data.question);
 }else{
