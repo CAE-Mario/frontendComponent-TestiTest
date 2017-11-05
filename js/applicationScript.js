@@ -73,7 +73,7 @@ var nextQuiz = function(){
         $("#question").text("Quiz completed thank you!");
         $('label').hide();
         $('button').hide();
-}  
+    }  
   },
   function(error) {
     console.log(error);
