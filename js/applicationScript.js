@@ -62,7 +62,18 @@ var nextQuiz = function(){
 
   client.sendRequest("GET", "videoquiz/getQuiz/" + window.counter, "", "", {}, false,
   function(data, type) {
-     
+    if(Object.keys(data).length > 0){
+$('#radioA').parent().contents().last()[0].textContent=data.answerA;
+$('#radioB').parent().contents().last()[0].textContent=data.answerB;
+$('#radioC').parent().contents().last()[0].textContent=data.answerC;
+$('#radioD').parent().contents().last()[0].textContent=data.answerD;
+$('#video').attr('src',data.videolink);
+$("#question").text(data.question);
+}else{
+$("#question").text("Quiz completed thank you!");
+$('label').hide();
+$('button').hide();
+}  
   },
   function(error) {
     console.log(error);
